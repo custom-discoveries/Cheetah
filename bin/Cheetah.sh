@@ -22,12 +22,12 @@ SystemPlatform=`uname`
       CHEETAH_PATH=`pwd`/Cheetah-Linux.app
       export CHEETAH_PATH
       export PATH=$PATH:$CHEETAH_PATH
-    fi    
+    fi
   elif [[ $SystemPlatform == "Darwin" ]]; then
     echo "Executing Mac Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
       echo "Setting CHEETAH_PATH..."
-      CHEETAH_PATH=`pwd`/Cheetah-Mac.app
+      CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
       export CHEETAH_PATH
       export PATH=$PATH:$CHEETAH_PATH
     fi
