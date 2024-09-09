@@ -3,16 +3,16 @@
 # Copyright (c) 2024, Custom Discoveries Inc.
 # All rights reserved.
 # Cheetah.sh: Bash shell script to run Cheetah application
+# ******************************************************************************
+# Determine which system platform we are running on...
+# ******************************************************************************
+
 #******************************************************************************
 # Run this script in the bin Directory each time you open a new terminal to set
 # the execution path
 # ******************************************************************************
 # Alternatively, set CHEETAH_PATH in your bashrc file and append it to the PATH
 # variable to make it permanent
-# ******************************************************************************
-
-# ******************************************************************************
-# Determine which system platform we are running on...
 # ******************************************************************************
 SystemPlatform=`uname`
   if [[ $SystemPlatform == "Linux" ]]; then
