@@ -16,6 +16,9 @@ if [ -z $CHEETAH_PATH ]; then
   export CHEETAH_PATH
   export PATH=$PATH:$CHEETAH_PATH
 fi
+# ******************************************************************************
+# Determine which system platform we are running on...
+# ******************************************************************************
 SystemPlatform=`uname`
   if [[ $SystemPlatform == "Linux" ]]; then
     echo "Executing Linux Cheetah RAD Tool"
