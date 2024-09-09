@@ -10,20 +10,26 @@
 # Alternatively, set CHEETAH_PATH in your bashrc file and append it to the PATH
 # variable to make it permanent
 # ******************************************************************************
-if [ -z $CHEETAH_PATH ]; then
-  echo "Setting CHEETAH_PATH..."
-  CHEETAH_PATH=`pwd`
-  export CHEETAH_PATH
-  export PATH=$PATH:$CHEETAH_PATH
-fi
+
 # ******************************************************************************
 # Determine which system platform we are running on...
 # ******************************************************************************
 SystemPlatform=`uname`
   if [[ $SystemPlatform == "Linux" ]]; then
     echo "Executing Linux Cheetah RAD Tool"
-      $CHEETAH_PATH/Cheetah-Linux.app/Cheetah
+    if [ -z $CHEETAH_PATH ]; then
+      echo "Setting CHEETAH_PATH..."
+      CHEETAH_PATH=`pwd`/Cheetah-Linux.app
+      export CHEETAH_PATH
+      export PATH=$PATH:$CHEETAH_PATH
+    fi    
   elif [[ $SystemPlatform == "Darwin" ]]; then
     echo "Executing Mac Cheetah RAD Tool"
-      $CHEETAH_PATH/Cheetah-Mac.app/Cheetah
+    if [ -z $CHEETAH_PATH ]; then
+      echo "Setting CHEETAH_PATH..."
+      CHEETAH_PATH=`pwd`/Cheetah-Mac.app
+      export CHEETAH_PATH
+      export PATH=$PATH:$CHEETAH_PATH
+    fi
   fi
+Cheetah
