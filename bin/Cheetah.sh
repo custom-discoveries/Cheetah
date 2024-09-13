@@ -39,6 +39,6 @@ Machine=`uname -m`
         export CHEETAH_PATH
         export PATH=$PATH:$CHEETAH_PATH
       fi
-      Cheetah
     fi
+    Cheetah
   fi
