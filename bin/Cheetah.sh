@@ -15,6 +15,7 @@
 # variable to make it permanent
 # ******************************************************************************
 SystemPlatform=`uname`
+Machine=`uname -m`
   if [[ $SystemPlatform == "Linux" ]]; then
     echo "Executing Linux Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
@@ -23,13 +24,21 @@ SystemPlatform=`uname`
       export CHEETAH_PATH
       export PATH=$PATH:$CHEETAH_PATH
     fi
+    Cheetah
   elif [[ $SystemPlatform == "Darwin" ]]; then
     echo "Executing Mac Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
-      echo "Setting CHEETAH_PATH..."
-      CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
-      export CHEETAH_PATH
-      export PATH=$PATH:$CHEETAH_PATH
+      if [ $Machine == "x86_64" ]; then
+        echo "Setting CHEETAH_PATH for $Machine..."
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
+        export CHEETAH_PATH
+        export PATH=$PATH:$CHEETAH_PATH
+      elif [ $Machine == "arm64" ]; then
+        echo "Setting CHEETAH_PATH for $Machine..."
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-M3.app
+        export CHEETAH_PATH
+        export PATH=$PATH:$CHEETAH_PATH
+      fi
+      Cheetah
     fi
   fi
-Cheetah
