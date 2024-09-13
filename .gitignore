@@ -1,0 +1,7 @@
+.venv/*
+.DS_Store
+.vscode/*
+src/__pycache__/*
+src/build/*
+remoteAdminConfig.txt
+localAdminConfig.txt
