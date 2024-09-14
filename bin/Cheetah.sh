@@ -35,7 +35,7 @@ Machine=`uname -m`
         export PATH=$PATH:$CHEETAH_PATH
       elif [ $Machine == "arm64" ]; then
         echo "Setting CHEETAH_PATH for $Machine..."
-        CHEETAH_PATH=`pwd`/Cheetah-Mac-M3.app
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-Arm64.app
         export CHEETAH_PATH
         export PATH=$PATH:$CHEETAH_PATH
       fi
