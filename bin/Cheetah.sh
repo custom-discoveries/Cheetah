@@ -4,15 +4,15 @@
 # All rights reserved.
 # Cheetah.sh: Bash shell script to run Cheetah application
 # ******************************************************************************
-# Determine which system platform we are running on...
+# Determine which system platform we are running on...by resetting CHEETAH_PATH
 # ******************************************************************************
-
+export CHEETAH_PATH=""
 #******************************************************************************
 # Run this script in the bin Directory each time you open a new terminal to set
 # the execution path
 # ******************************************************************************
-# Alternatively, set CHEETAH_PATH in your bashrc file and append it to the PATH
-# variable to make it permanent
+# Alternatively, append CHEETAH_PATH in your .bashrc file and append it to the
+# PATH variable to make it permanent
 # ******************************************************************************
 SystemPlatform=`uname`
 Machine=`uname -m`
