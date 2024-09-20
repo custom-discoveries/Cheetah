@@ -15,11 +15,11 @@ Cheetah is a command line Rapid Application Deployment (RAD) Tool for performing
 
 - Cheetah is designed around the concept of “Separation of Concerns,” meaning that each “Graph” is loaded into the database as a “local” instance and is maintained in a separate folder structure – known as a project directory.
 
-- To get started: Simply clone this repository and run the *initCheetah.sh* from the bin directory to set up your environment path.
+- To get started: Simply clone this repository and run the *initCheetah.sh* from the bin directory to setup your environment path.
   - Once your environment path is setup, quit out of the tool, then clone one of the other Tigergraph examples in cusotm-discoveries repository.
-      - With the exception of *Ethereum*, which is a pure python programmatically application that will create a simple schema with Vertex and Edges
+      - With the exception of *Ethereum*, which is a pure python programmatic application that will create a simple schema with Vertex and Edges
   - Enter the project dirctory that you cloned and run the command Cheetah, you should be prompted for environment variables.
 
 - Cheetah has an option to allow you to create a project directory and populate it with template TigerGraph DDL scripts, so as to get you up and running in no time.
-  - Run Cheetah, then select [-p] to define and install the Project Folder Structure
+  - Run Cheetah, then select [-p] to define and install a new Project Folder Structure
 </h3>
