@@ -7,7 +7,7 @@
 <p align="center">Custom Discoveries Cheetah</p>
 </h2>
 <h3>
-- Cheetah is a command line Rapid Application Deployment (RAD) Tool for performing TigerGraph Database Administrative functions.
+Cheetah is a command line Rapid Application Deployment (RAD) Tool for performing TigerGraph Database Administrative functions.
 
 - Cheetah is a Linux (Ubuntu) / MacOS based command line tool that assist in deploying TigerGraph Database DDL scripts on a local instance and deploy in the cloud with a minimal effort.
 
@@ -15,10 +15,11 @@
 
 - Cheetah is designed around the concept of “Separation of Concerns,” meaning that each “Graph” is loaded into the database as a “local” instance and is maintained in a separate folder structure – known as a project directory.
 
-- Cheetah has an option to allow you to create you this project directory and populate it with template TigerGraph DDL scripts, to get you up and running in no time.
-
 - To get started: Simply clone this repository and run the *initCheetah.sh* from the bin directory to set up your environment path.
   - Once your environment path is setup, quit out of the tool, then clone one of the other Tigergraph examples in cusotm-discoveries repository.
       - With the exception of *Ethereum*, which is a pure python programmatically application that will create a simple schema with Vertex and Edges
   - Enter the project dirctory that you cloned and run the command Cheetah, you should be prompted for environment variables.
+
+- Cheetah has an option to allow you to create a project directory and populate it with template TigerGraph DDL scripts, so as to get you up and running in no time.
+  - Run Cheetah, then select [-p] to define and install the Project Folder Structure
 </h3>
