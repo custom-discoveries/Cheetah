@@ -9,7 +9,7 @@
 
 ### Cheetah is a command-line Rapid Application Deployment (RAD) tool designed to simplify TigerGraph Database administrative functions. It eliminates the complexities of managing secrets, tokens, and security authentication, ensuring seamless access. 
 
-### Cheetah program is compatible with both Linux (Ubuntu) and macOS, enabling effortless deployment of TigerGraph Database DDL scripts either locally or in the cloud with minimal effort
+### Cheetah program runs on both Linux (Ubuntu) and macOS (Intel,Mx), enabling effortless deployment of TigerGraph Database DDL scripts either locally or in the cloud with minimal effort.
 
 ### One of Cheetah’s super powers is the ability to “Flip” between Local and Remote Servers, allowing a developer to develop loacally and deploy in their TigerGraph database schema in the cloud.
 
