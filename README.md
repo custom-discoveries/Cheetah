@@ -26,5 +26,4 @@
 ### Enter the project dirctory that you cloned and run the command Cheetah, you should be prompted for environment variables.
   - Example: cd ~/mydata/Genealogy/
   - Genealogy> Cheetah
-### If you are starting from scratch, Cheetah has an option to allow you to create a project directory and populate it with template TigerGraph DDL scripts , so as to get you up and running in no time.
-  - Run Cheetah, then select [-p] to define and install a new Project Folder Structure
+### If you are starting from scratch, Cheetah will create a project directory and populate it with template TigerGraph DDL scripts , so as to get you up and running in no time.
