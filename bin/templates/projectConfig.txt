@@ -1,0 +1,6 @@
+dataDir,GraphData/
+DDLdir,DDLs/
+ddlDataPath,Data/
+ddlQueryPath,Queries/
+ddlSchemaPath,Schema/
+projectConfigDir,Cheetah/bin/templates/
