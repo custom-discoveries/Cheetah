@@ -25,7 +25,7 @@ To install Cheetah, clone this repository at a terminal command prompt:
 -  Cheetah/bin\> . ./initCheetah.sh [^1]
 -  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
-[^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to change your startup script (.bashrc) to make the changes permanent.
+[^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
 ### Using Cheetah on one of the Custom Discoveries TigerGraph examples below:
   - [BCBSA](https://github.com/custom-discoveries/BCBSA)
   - [Genealogy](https://github.com/custom-discoveries/Genealogy)
@@ -41,7 +41,7 @@ To install Cheetah, clone this repository at a terminal command prompt:
 ### Using Cheetah when starting from scratch:
 - Cheetah will create a project directory and populate it with template TigerGraph DDL scripts
 - Example:
-    - cd ~/mydata/ [^2]
+    - cd ~/mydata/[^2]
     - mydata> Cheetah
        - Cheetah will prompt you for a Project Directory. Enter *SomeProjectName*
        - Cheetah will create you a directory with the name you passed it: *SomeProjectName*
