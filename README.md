@@ -26,7 +26,7 @@ To install Cheetah, clone this repository at a terminal command prompt:
 -  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
 [^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to change your startup script (.bashrc) to make the changes permanent.
-### You can use Cheetah on one of Custom Discoveries TigerGraph examples below:
+### Using Cheetah on one of the Custom Discoveries TigerGraph examples below:
   - [BCBSA](https://github.com/custom-discoveries/BCBSA)
   - [Genealogy](https://github.com/custom-discoveries/Genealogy)
   - [Health-Analytics](https://github.com/custom-discoveries/Health-Analytics)
