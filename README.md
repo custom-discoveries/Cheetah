@@ -22,8 +22,17 @@
   - [Health-Analytics](https://github.com/custom-discoveries/Health-Analytics)
   - [HRA](https://github.com/custom-discoveries/HRA)
   - With the exception of [*Ethereum*](https://github.com/custom-discoveries/Ethereum), which is a pure python programmatic application that will create a simple schema with Vertex and Edges.
+## Install and Run
+### Install
+To install Cheetah, clone this repository at a terminal command prompt: 
+- \>git clone https://github.com/custom-discoveries/Cheetah.git
+### Initialize Cheetah:
+-  cd Cheetah/bin
+-  Cheetah/bin\> . ./initCheetah.sh [^1]
+-  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
-### Enter the project dirctory that you cloned and run the command Cheetah, you should be prompted for environment variables.
+[^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to change your startup script (.bashrc) to make the changes permanent.
+### Using Cheetah to Install TigerGraph Database Applications:
   - Example: cd ~/mydata/Genealogy/
   - Genealogy> Cheetah
 ### If you are starting from scratch, Cheetah will create a project directory and populate it with template TigerGraph DDL scripts , so as to get you up and running in no time.
