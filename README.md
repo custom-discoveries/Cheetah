@@ -42,7 +42,7 @@ To install Cheetah, clone this repository at a terminal command prompt:
 - Cheetah will create a project directory and populate it with template TigerGraph DDL scripts
 - Example:
     - cd ~/mydata/ [^2]
-    - Cheetah
+    - mydata> Cheetah
        - Cheetah will prompt you for a Project Directory. Enter *SomeProjectName*
        - Cheetah will create you a directory with the name you passed it: *SomeProjectName*
-[^2]: The assumption is the 'Cheetah' repsoitory is been loaded under *~/mydata/* directory
+[^2]: The assumption is the 'Cheetah' directory is been loaded under *~/mydata/* directory
