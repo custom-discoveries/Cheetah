@@ -1,3 +1,0 @@
-This is a place holder file to assure GitHub will commit the directory
-You can delete this file once the directory has been created.
-
