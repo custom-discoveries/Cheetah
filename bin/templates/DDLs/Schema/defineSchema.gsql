@@ -1,4 +1,7 @@
 #
+# Copyright (c) 2024, Custom Discoveries Inc.
+# All rights reserved.
+#
 USE Graph <graph_name>
 set exit_on_error = "false"
 #

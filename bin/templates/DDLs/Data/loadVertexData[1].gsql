@@ -1,8 +1,11 @@
 #
+# Copyright (c) 2024, Custom Discoveries Inc.
+# All rights reserved.
+#
+#
 # Example of loading Vertex from one data load file
 #
 Use Graph <graph_name>
-DROP JOB <graph_name>_Vertex_Job
 CREATE LOADING JOB  <graph_name>_Vertex_Job FOR GRAPH  <graph_name> {
 DEFINE FILENAME DS1 = "./GraphData/<filename1>.csv";
 DEFINE FILENAME DS2 = "./GraphData/<filename2>.csv";

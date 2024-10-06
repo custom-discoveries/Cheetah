@@ -1,4 +1,8 @@
 CREATE QUERY templateQuery(VERTEX<SOME_VERTEX> vertex_variable) {
+/**
+  Copyright (c) 2024, Custom Discoveries Inc.
+  All rights reserved.
+**/
   #
   # This is a template query for Cheetah RAD tool.  Note, the QUERY name
   # needs to be identical to query file name, minus the brackets '[]'.
