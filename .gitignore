@@ -3,5 +3,6 @@
 .vscode/*
 src/__pycache__/*
 src/build/*
+installLinuxBranch.sh
 remoteAdminConfig.txt
 localAdminConfig.txt
