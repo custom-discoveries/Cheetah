@@ -22,7 +22,7 @@ Machine=`uname -m`
       echo "Setting CHEETAH_PATH..."
       CHEETAH_PATH=`pwd`/Cheetah-Linux.app
       export CHEETAH_PATH
-      export PATH=$PATH:$CHEETAH_PATH
+      export PATH=$CHEETAH_PATH:$PATH
     fi
     Cheetah
   elif [[ $SystemPlatform == "Darwin" ]]; then
@@ -32,12 +32,12 @@ Machine=`uname -m`
         echo "Setting CHEETAH_PATH for $Machine..."
         CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
         export CHEETAH_PATH
-        export PATH=$PATH:$CHEETAH_PATH
+        export PATH=$CHEETAH_PATH:$PATH
       elif [ $Machine == "arm64" ]; then
         echo "Setting CHEETAH_PATH for $Machine..."
         CHEETAH_PATH=`pwd`/Cheetah-Mac-Arm64.app
         export CHEETAH_PATH
-        export PATH=$PATH:$CHEETAH_PATH
+	export PATH=$CHEETAH_PATH:$PATH
       fi
     fi
     Cheetah
