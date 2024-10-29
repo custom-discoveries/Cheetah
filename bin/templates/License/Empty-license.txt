@@ -1,4 +1,0 @@
-This is a place holder file to assure GitHub will commit the directory.
-You can either replace this with a TigerGraph License file that run a
-TigerGraph instance in a Docker image.  Or you can delete this file once
-the directory has been created.
