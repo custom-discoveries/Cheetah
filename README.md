@@ -13,7 +13,10 @@
 
 ### One of Cheetah’s super powers is the ability to “Flip” between Local and Remote Servers, allowing a developer to develop loacally and deploy in their TigerGraph database schema in the cloud.
 
-### Cheetah is built on the principle of 'Separation of Concerns,' utilizing a folder structure to organize different DDL scripts for building and loading a *Graph* instance. One folder is dedicated to schema definition, another to query definitions, and a final folder for defining the data loading process for vertices and edges.
+### Cheetah is built on the principle of 'Separation of Concerns,' utilizing a folder structure to organize different DDL scripts for building and loading a *Graph* instance. 
+
+### One folder is dedicated to schema definition, another to query definitions, and a final folder for defining the data loading process for vertices and edges. The *GraphData* folder holds all of your data files that will be used to load your Graph.
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/257572ef-bade-45f0-a510-235d3963a244">
 
 
 ## Install and Run
