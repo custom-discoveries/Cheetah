@@ -19,13 +19,15 @@
 ## Install and Run
 ### Install
 To install Cheetah, clone this repository at a terminal command prompt: 
-- \>git clone https://github.com/custom-discoveries/Cheetah.git
+- \>git clone https://github.com/custom-discoveries/Cheetah.git [^1]
+[^1]: Cloning this repository will download Cheetah for all three supported platforms (Linux, macOS-(Intel,Mx)). Linux is only supported for zip based delivery at this time.
+
 ### Initialize Cheetah:
 -  cd Cheetah/bin
--  Cheetah/bin\> . ./initCheetah.sh [^1]
+-  Cheetah/bin\> . ./initCheetah.sh [^2]
 -  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
-[^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
+[^2]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
 ### Using Cheetah on one of the Custom Discoveries TigerGraph Schema examples below:
   - [Global_Types](https://github.com/custom-discoveries/Global_Types)
   - [BCBSA](https://github.com/custom-discoveries/BCBSA) (Note: BCBSA has a dependency on Global_Types)
@@ -44,8 +46,8 @@ To install Cheetah, clone this repository at a terminal command prompt:
 ### Using Cheetah when starting from scratch:
 - Cheetah will create a project directory and populate it with template TigerGraph DDL scripts
 - Example:
-    - cd ~/mydata/[^2]
+    - cd ~/mydata/[^3]
     - mydata> Cheetah
        - Cheetah will prompt you for a Project Directory. Enter *SomeProjectName*
        - Cheetah will create you a directory with the name you passed it: *SomeProjectName*
-[^2]: The assumption is the 'Cheetah' directory exists under *~/mydata/* directory
+[^3]: The assumption is the 'Cheetah' directory exists under *~/mydata/* directory
