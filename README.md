@@ -1,5 +1,5 @@
 <p align="center">
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/176b28d4-e720-48c9-aab9-d341976974eb">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/95effac5-14cd-4612-b4dd-01303c806231">
 </p>
 
 
@@ -26,12 +26,14 @@ To install Cheetah, clone this repository at a terminal command prompt:
 -  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
 [^1]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
-### Using Cheetah on one of the Custom Discoveries TigerGraph examples below:
+### Using Cheetah on one of the Custom Discoveries TigerGraph Schema examples below:
   - [Global_Types](https://github.com/custom-discoveries/Global_Types)
   - [BCBSA](https://github.com/custom-discoveries/BCBSA) (Note: BCBSA has a dependency on Global_Types)
   - [Genealogy](https://github.com/custom-discoveries/Genealogy)
   - [Health-Analytics](https://github.com/custom-discoveries/Health-Analytics)
   - [HRA](https://github.com/custom-discoveries/HRA)
+  - [LDBC](https://github.com/custom-discoveries/LDBC)  - Linked Data Benchmark Council
+      - Requires loading **User Defined Functions** (UDF's)
   - With the exception of [*Ethereum*](https://github.com/custom-discoveries/Ethereum), which is a pure python programmatic application that will create a simple schema with Vertex and Edges.
 ### Using Cheetah to Install one of the TigerGraph Example Applications:
 -  To install one of the above TigerGraph examples perform the following:
