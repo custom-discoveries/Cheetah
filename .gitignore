@@ -6,3 +6,4 @@ src/build/*
 installLinuxBranch.sh
 remoteAdminConfig.txt
 localAdminConfig.txt
+License/*.txt
