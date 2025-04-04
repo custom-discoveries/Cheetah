@@ -19,7 +19,7 @@ Machine=`uname -m`
   if [[ $SystemPlatform == "Linux" ]]; then
     echo "Executing Linux Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
-      echo "Setting CHEETAH_PATH..."
+      echo "Setting CHEETAH_PATH for $Machine..."
       CHEETAH_PATH=`pwd`/Cheetah-Linux.app
       export CHEETAH_PATH
       export PATH=$CHEETAH_PATH:$PATH
