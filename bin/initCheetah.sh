@@ -19,12 +19,17 @@ Machine=`uname -m`
   if [[ $SystemPlatform == "Linux" ]]; then
     echo "Executing Linux Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
-      echo "Setting CHEETAH_PATH for $Machine..."
-      CHEETAH_PATH=`pwd`/Cheetah-Linux.app
-      export CHEETAH_PATH
-      export PATH=$CHEETAH_PATH:$PATH
+      if [ $Machine == "x86_64" ]; then
+        echo "Setting CHEETAH_PATH for $Machine..."
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
+        export CHEETAH_PATH
+        export PATH=$CHEETAH_PATH:$PATH
+      elif [ $Machine == "aarch64" ]; then
+        echo "Setting CHEETAH_PATH for $Machine..."
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-Arm64.app
+        export CHEETAH_PATH
+      fi
     fi
-    Cheetah
   elif [[ $SystemPlatform == "Darwin" ]]; then
     echo "Executing Mac Cheetah RAD Tool"
     if [ -z $CHEETAH_PATH ]; then
@@ -32,13 +37,17 @@ Machine=`uname -m`
         echo "Setting CHEETAH_PATH for $Machine..."
         CHEETAH_PATH=`pwd`/Cheetah-Mac-Intel.app
         export CHEETAH_PATH
-        export PATH=$CHEETAH_PATH:$PATH
       elif [ $Machine == "arm64" ]; then
+        echo "Setting CHEETAH_PATH for Linux..."
+        CHEETAH_PATH=`pwd`/Cheetah-Mac-Arm64.app
+        export CHEETAH_PATH
+      elif [ $Machine == "aarch64" ]; then
         echo "Setting CHEETAH_PATH for $Machine..."
         CHEETAH_PATH=`pwd`/Cheetah-Mac-Arm64.app
         export CHEETAH_PATH
-	export PATH=$CHEETAH_PATH:$PATH
       fi
     fi
-    Cheetah
   fi
+  echo $CHEETAH_PATH
+  export PATH=$CHEETAH_PATH:$PATH
+  Cheetah
