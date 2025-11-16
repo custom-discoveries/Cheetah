@@ -1,3 +1,3 @@
-This is a placeholder file for your TigerGraph License file that you will
+This is a placeholder folder for your TigerGraph License file that you will
 need if your running TigerGraph under a Docker image or in your own Linux
 environmental.
