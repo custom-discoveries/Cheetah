@@ -1,29 +1,19 @@
-CREATE QUERY templateQuery(STRING name) {
+CREATE QUERY templateQuery(VERTEX<SOME_VERTEX> vertex_variable) {
 /**
   Copyright (c) 2024, Custom Discoveries Inc.
   All rights reserved.
 **/
   #
   # This is a template query for Cheetah RAD tool.  Note, the QUERY name
-  # needs to be identical to query file name, minus the brackets '[]' and
-  # the file extension.
+  # needs to be identical to query file name, minus the brackets '[]'.
   #
   # The brackets '[with integer value]' in the file name are optional and
-  # allows the Cheetah to load the queries in a preferred sequence when
+  # allows the Tool to load the queries in a preferred sequence when
   # there are sub-query dependencies.
-
   #
-  # Define pattern matching using '%' to match zero or more characters
-  # using the LIKE operator in WHERE clause
-  #
-  STRING name_Search  = "%" + upper(name) + "%";
+  Start = {SOME_OTHER_VERTEX.*};
 
-  RS = {};
-  Start = {SOME_VERTEX.*};
-
-  IF (name != "") THEN
-    RS = SELECT v from Start:v WHERE (v.name LIKE name_Search);
-  END;
+  Results = SELECT v from Start:v WHERE v.id == vertex_variable.id;
 
   PRINT Results.size();
   PRINT Results[ Results.id, Results.name, etc...];
