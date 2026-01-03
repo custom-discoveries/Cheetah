@@ -26,11 +26,12 @@ To install Cheetah, clone this repository at a terminal command prompt:
 [^1]: Cloning this repository will download Cheetah for all three supported platforms (Linux, macOS-(Intel,Mx)). Linux is only supported for zip based delivery at this time.
 
 ### Initialize Cheetah:
--  cd Cheetah/bin
--  Cheetah/bin\> . ./initCheetah.sh [^2]
+-  cd Cheetah
+-  cp bashrc ~/.bashrc (optional to setup your bash environment to add Cheetah to your path)
+-  Cheetah/bin\> . ./Cheetah.sh [^2]
 -  Cheetah will open with a welcome banner in the terminal, this will confirm that you have properly installed and initialized it. Now close Cheetah.
 
-[^2]: initCheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
+[^2]: Cheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
 ### Using Cheetah on one of the Custom Discoveries TigerGraph Schema examples below:
   - [Global_Types](https://github.com/custom-discoveries/Global_Types)
   - [BCBSA](https://github.com/custom-discoveries/BCBSA) (Note: BCBSA has a dependency on Global_Types)
