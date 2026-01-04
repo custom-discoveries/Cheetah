@@ -33,8 +33,8 @@ To install Cheetah, clone this repository at a terminal command prompt:
 
 [^2]: Cheetah will initialize your enviornment only for the session of the terminal window. You will need to add $CHEETAH_PATH to startup script (.bashrc) to make the changes permanent.
 ### Using Cheetah on one of the Custom Discoveries TigerGraph Schema examples below:
-  - [Global_Types](https://github.com/custom-discoveries/Global_Types)
-  - [BCBSA](https://github.com/custom-discoveries/BCBSA) (Note: BCBSA has a dependency on Global_Types)
+  - [USA-Locations](https://github.com/custom-discoveries/USA-Locations)
+  - [BCBSA](https://github.com/custom-discoveries/BCBSA) (Note: BCBSA has a dependency on USA-Locations)
   - [Genealogy](https://github.com/custom-discoveries/Genealogy)
   - [Health-Analytics](https://github.com/custom-discoveries/Health-Analytics)
   - [HRA](https://github.com/custom-discoveries/HRA)
