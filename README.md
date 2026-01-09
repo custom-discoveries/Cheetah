@@ -61,3 +61,7 @@ To install Cheetah, clone this repository at a terminal command prompt:
   
 - January 9th 2026 - V2.6
   - Added new feature under Admin Menu to allow view packages
+
+- January 3rd 2026 - V2.5
+  - Added new feature to query menu - 'Show Query Descriptions', which will show any query descriptions that have been defined against a query.
+    
