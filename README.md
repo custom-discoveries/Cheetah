@@ -58,10 +58,14 @@ To install Cheetah, clone this repository at a terminal command prompt:
 ### Release Notes:
 - Cheetah is built to run on native Linux, Mac Intel, and Mac ARM (M1-4) architectures.
 - Note: Cheetah will run on Docker Linux (Ubuntu) native x86 architecture, but will not run under a Docker image that relies on Rosetta to emulate x86 instructions
+
+- January 14th 2026 - V2.6.1
+  - Added 2 fixes, 1) removed comments from load file for remote host, 2) fixed issue with deleting all queries under Global
   
 - January 9th 2026 - V2.6
   - Added new feature under Admin Menu to allow view packages
 
 - January 3rd 2026 - V2.5
   - Added new feature to query menu - 'Show Query Descriptions', which will show any query descriptions that have been defined against a query.
+
     
