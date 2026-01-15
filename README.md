@@ -55,3 +55,13 @@ To install Cheetah, clone this repository at a terminal command prompt:
        - Cheetah will prompt you for a Project Directory. Enter *SomeProjectName*
        - Cheetah will create you a directory with the name you passed it: *SomeProjectName*
 [^3]: The assumption is the 'Cheetah' directory exists under *~/mydata/* directory
+### Release Notes:
+- Cheetah is built to run on native Linux, Mac Intel, and Mac ARM (M1-4) architectures.
+- Note: Cheetah will run on Docker Linux (Ubuntu) native x86 architecture, but will not run under a Docker image that relies on Rosetta to emulate x86 instructions
+  
+- January 9th 2026 - V2.6
+  - Added new feature under Admin Menu to allow view packages
+
+- January 3rd 2026 - V2.5
+  - Added new feature to query menu - 'Show Query Descriptions', which will show any query descriptions that have been defined against a query.
+    
