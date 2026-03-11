@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2024, Custom Discoveries Inc.
+# All rights reserved.
+#
+#
+# Example of loading Edges from one data load file
+#
+Use Graph <graph_name>
+CREATE LOADING JOB <graph_name>_Edge_Job FOR GRAPH <graph_name> {
+DEFINE FILENAME DS1 = "./GraphData/<filename1>.csv";
+DEFINE FILENAME DS2 = "./GraphData/<filename2>.csv";
+
+# Load Edges
+#Example of using VERTEX_MUST_EXIST flag.  If set true, Veertex must exist to create edge.  If set False, Edge will create Vertex if it doesn't already exist.
+LOAD DS1 TO EDGE <edge_name> VALUES($0, $1, $2) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double", VERTEX_MUST_EXIST="true";
+LOAD DS2 TO EDGE <edge_name> VALUES($4, $2, $6, $7) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
+
+}
+#run the Edge loading job
+RUN LOADING JOB <graph_name>_Edge_Job
+
+#drop the job, indicating the job is completed
+DROP JOB <graph_name>_Edge_Job

@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH=/home/tigergraph/tigergraph/app/cmd:/home/tigergraph/mydata/Cheetah/bin:$PATH
+export PATH=$PATH:/home/tigergraph/tigergraph/app/cmd
 if which gadmin &> /dev/null && [ "$(type -t _get_comp_words_by_ref)" = "function" ]; then . <(gadmin autocomplete bash); fi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

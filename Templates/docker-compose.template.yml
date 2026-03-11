@@ -1,0 +1,23 @@
+services:
+  tigergraph:
+    image: <<image_name>> #tigergraph/community:4.2.2
+    container_name: <<container_name>> #TG-Custom-Discoveries-4.2.2
+    ports:
+      - "14022:22"
+      - "9000:9000"
+      - "14240:14240"
+      - "443:443"
+    pid: host
+    ulimits:
+      nofile:
+        soft: 1000000
+        hard: 1000000
+    volumes:
+      - <<local_path>>:<<image_path>> #$HOME/Documents/TigerGraph-Projects:/home/tigergraph/mydata
+#    platform: "$platform"
+    deploy:
+      restart_policy:
+        condition: any
+
+#volumes:
+#  tigergraph:
