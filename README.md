@@ -7,13 +7,13 @@
 <p align="center">Custom Discoveries Cheetah</p>
 </h2>
 
-### Cheetah is a command-line Rapid Application Deployment (RAD) tool designed to simplify TigerGraph *"Classic"* Database administrative functions. It eliminates the complexities of managing secrets, tokens, and security authentication, ensuring seamless access. 
+### Cheetah is a command-line Rapid Application Deployment (RAD) tool designed to simplify TigerGraph *"Classic"* Database administrative functions. It eliminates the complexities of managing secrets, tokens, and security authentication, ensuring seamless access.
 
 ### Cheetah program runs on both Linux (Ubuntu) and macOS (Intel,Mx), enabling effortless deployment of TigerGraph Database DDL scripts either locally or in the cloud with minimal effort.
 
 ### One of Cheetah’s super powers is the ability to “Flip” between Local and Remote Servers, allowing a developer to develop loacally and deploy in their TigerGraph database schema in the cloud.
 
-### Cheetah is built on the principle of 'Separation of Concerns,' utilizing a folder structure to organize different DDL scripts for building and loading a *Graph* instance. 
+### Cheetah is built on the principle of 'Separation of Concerns,' utilizing a folder structure to organize different DDL scripts for building and loading a *Graph* instance.
 
 ### One folder is dedicated to schema definition, another to query definitions, and a final folder for defining the data loading process for vertices and edges. The *GraphData* folder holds all of your data files that will be used to load your Graph.
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/257572ef-bade-45f0-a510-235d3963a244">
@@ -21,7 +21,7 @@
 
 ## Install and Run
 ### Install
-To install Cheetah, clone this repository at a terminal command prompt: 
+To install Cheetah, clone this repository at a terminal command prompt:
 - \>git clone https://github.com/custom-discoveries/Cheetah.git [^1]
 [^1]: Cloning this repository will download Cheetah for all three supported platforms (Linux, macOS-(Intel,Mx)). Linux is only supported for zip based delivery at this time.
 
@@ -57,15 +57,22 @@ To install Cheetah, clone this repository at a terminal command prompt:
 [^3]: The assumption is the 'Cheetah' directory exists under *~/mydata/* directory
 ### Release Notes:
 - Cheetah is built to run on native Linux, Mac Intel, and Mac ARM (M1-4) architectures.
-- Note: Cheetah will run on Docker Linux (Ubuntu) native x86 architecture, but will not run under a Docker image that relies on Rosetta to emulate x86 instructions
+- Note: Cheetah will run on Docker Linux (Ubuntu) native x86 architecture, but does not run reliably under a Docker image that relies on Rosetta to emulate x86 instructions
+
+- March 13 2026 - V3.0
+  - Added Several new features:
+  - 1) Added feature to replace named columns with the corresponding header index for 'remote' data loading jobs
+  - 2) Added code to convert Token Expiration Date to local timezone
+  - 3) Added new feature to allow accessing schema, queries, and data loads from sub-directories
+  - 4) Added new feature to Show Loaded Vertices and Edges counts
+  - 5) Refactored load chunking logic for remote data loads, made it more efficient.
+  - 6) Lots of internal refactoring, and bug fixes...
 
 - January 14th 2026 - V2.6.1
   - Added 2 fixes, 1) removed comments from load file for remote host, 2) fixed issue with deleting all queries under Global
-  
+
 - January 9th 2026 - V2.6
   - Added new feature under Admin Menu to allow view packages
 
 - January 3rd 2026 - V2.5
   - Added new feature to query menu - 'Show Query Descriptions', which will show any query descriptions that have been defined against a query.
-
-    
