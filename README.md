@@ -61,12 +61,13 @@ To install Cheetah, clone this repository at a terminal command prompt:
 
 - March 13 2026 - V3.0
   - Added Several new features:
-  - 1) Added feature to replace named columns with the corresponding header index for 'remote' data loading jobs
-  - 2) Added code to convert Token Expiration Date to local timezone
-  - 3) Added new feature to allow accessing schema, queries, and data loads from sub-directories
-  - 4) Added new feature to Show Loaded Vertices and Edges counts
-  - 5) Refactored load chunking logic for remote data loads, made it more efficient.
-  - 6) Lots of internal refactoring, and bug fixes...
+  - 1) Added feature to configure and create a Docker Image
+  - 2) Added feature to replace named columns with the corresponding header index for 'remote' data loading jobs
+  - 3) Added code to convert Token Expiration Date to local timezone
+  - 4) Added new feature to allow accessing schema, queries, and data loads from sub-directories
+  - 5) Added new feature to Show Loaded Vertices and Edges counts
+  - 6) Refactored load chunking logic for remote data loads, made it more efficient.
+  - 7) Lots of internal refactoring, and bug fixes...
 
 - January 14th 2026 - V2.6.1
   - Added 2 fixes, 1) removed comments from load file for remote host, 2) fixed issue with deleting all queries under Global
