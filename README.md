@@ -57,16 +57,20 @@ To install Cheetah, clone this repository at a terminal command prompt:
 [^3]: The assumption is the 'Cheetah' directory exists under *~/mydata/* directory
 ### Release Notes:
 - Cheetah is built to run on native Linux, Mac Intel, and Mac ARM (M1-4) architectures.
-- Note: Cheetah will run on Docker Linux (Ubuntu) native x86 architecture, but does not run reliably under a Docker image that relies on Rosetta to emulate x86 instructions
+- Note: Cheetah will **run on Docker Linux (Ubuntu) native x86 architecture**, but does not run reliably under a Docker image that relies on Rosetta to emulate x86 instructions (i.e. Docker on Mac ARM, there is an issue with TigerGraph using binaraies to run load jobs)
+
+- May 7 2026 - V3.2
+- Continued to refactor, resolved issue - needing to login to create a configuration file
 
 - March 13 2026 - V3.0
   - Added Several new features:
-  - 1) Added feature to replace named columns with the corresponding header index for 'remote' data loading jobs
-  - 2) Added code to convert Token Expiration Date to local timezone
-  - 3) Added new feature to allow accessing schema, queries, and data loads from sub-directories
-  - 4) Added new feature to Show Loaded Vertices and Edges counts
-  - 5) Refactored load chunking logic for remote data loads, made it more efficient.
-  - 6) Lots of internal refactoring, and bug fixes...
+  - 1) Added feature to configure and create a Docker Image
+  - 2) Added feature to replace named columns with the corresponding header index for 'remote' data loading jobs
+  - 3) Added code to convert Token Expiration Date to local timezone
+  - 4) Added new feature to allow accessing schema, queries, and data loads from sub-directories
+  - 5) Added new feature to Show Loaded Vertices and Edges counts
+  - 6) Refactored load chunking logic for remote data loads, made it more efficient.
+  - 7) Lots of internal refactoring, and bug fixes...
 
 - January 14th 2026 - V2.6.1
   - Added 2 fixes, 1) removed comments from load file for remote host, 2) fixed issue with deleting all queries under Global
